@@ -197,6 +197,7 @@
     
     this.divContainer.removeClass('dm-snake-gameover');
     this.divContainer.find('.dm-snake-gameover-screen').fadeOut(300);
+    $('#dm-snake-trigger').fadeOut();
   }
   
   /**
@@ -428,6 +429,7 @@
       }
     });
     $('#dm-snake-trigger').text('Try again!');
+    $('#dm-snake-trigger').fadeIn();
   };
   
   
