@@ -1,0 +1,51 @@
+.dm-snake {
+  width: 300px;
+  margin: 0 auto;
+}
+
+
+.dm-snake-field {
+  height: 200px;
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .2);
+}
+
+.dm-snake-gameover .dm-snake-field {
+  border-color: red;
+}
+
+
+.dm-snake-object {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url(../img/snake-object-bg.png) no-repeat 0 0;
+}
+
+
+.dm-snake-food {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background: url(../img/snake-food-bg.png) no-repeat 0 0;
+}
+
+
+.dm-snake-gameover-screen {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 140px;
+  width: 100%;
+  text-align: center;
+  color: red;
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: bold;
+}
