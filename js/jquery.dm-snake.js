@@ -85,9 +85,8 @@
     
     this.divFood.css({
       left: l + 'px',
-      top: t + 'px',
-      display: 'block'
-    });
+      top: t + 'px'
+    }).fadeIn(300);
   };
   
   /**
@@ -418,6 +417,16 @@
     this.food.hide();
     this.scores.save();
     this.divContainer.find('.dm-snake-gameover-screen').fadeIn(300);
+    this.divContainer.animate({
+      left: '-10px'
+    }, {
+      duration: 200,
+      complete: function() {
+        $(this).animate({ left: '15px' }, { duration: 200, complete: function() {
+          $(this).animate({ left: 0 }, { duration: 100 });
+        }});
+      }
+    });
     $('#dm-snake-trigger').text('Try again!');
   };
   

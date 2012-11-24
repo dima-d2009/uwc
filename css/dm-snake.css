@@ -6,6 +6,7 @@ body {
 .dm-snake {
   width: 300px;
   margin: 0 auto;
+  position: relative;
 }
 
 .dm-snake-field {
@@ -46,7 +47,7 @@ body {
   display: none;
   position: absolute;
   left: 0;
-  top: 155px;
+  top: 105px;
   width: 100%;
   text-align: center;
   color: red;
@@ -54,8 +55,6 @@ body {
   line-height: 34px;
   font-weight: bold;
 }
-
-
 
 
 #dm-snake-trigger {
