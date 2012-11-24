@@ -1,10 +1,15 @@
+body {
+  padding: 50px 0 0 0;
+  font-family: arial, helvetica, sans-serif;
+}
+
 .dm-snake {
   width: 300px;
   margin: 0 auto;
 }
 
-
 .dm-snake-field {
+  clear: both;
   height: 200px;
   border: 1px solid #ccc;
   position: relative;
@@ -41,7 +46,7 @@
   display: none;
   position: absolute;
   left: 0;
-  top: 140px;
+  top: 155px;
   width: 100%;
   text-align: center;
   color: red;
@@ -49,3 +54,27 @@
   line-height: 34px;
   font-weight: bold;
 }
+
+
+
+
+#dm-snake-trigger {
+  float: left;
+}
+
+.dm-snake-scores {
+  float: right;
+  overflow: hidden;
+  margin: 0 0 5px 0;
+}
+
+.dm-snake-scores > div {
+  float: left;
+  margin: 0 0 0 10px;
+  color: #888;
+}
+
+  .dm-snake-scores > div span {
+    font-weight: bold;
+    color: #000;
+  }

@@ -181,6 +181,8 @@
     
     this.movementPoints = 4;
     this.movementTime = 70;
+    this.dir = 'right';
+    $('#dm-snake-trigger').text('Start!');
     
     this.grow();
     this.grow();
@@ -416,6 +418,7 @@
     this.food.hide();
     this.scores.save();
     this.divContainer.find('.dm-snake-gameover-screen').fadeIn(300);
+    $('#dm-snake-trigger').text('Try again!');
   };
   
   
